@@ -1,0 +1,13 @@
+
+apt install cmake
+
+cd libwebsockets/
+mkdir build/
+cd build/
+cmake ../ -DLWS_WITH_SSL=OFF
+make
+
+cd rpi-toggle-web/
+make
+
+./install
